@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+</body>
+</html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+
+<style>
+ body {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+h1, h2 {
+text-align:center;
+font-family:'Bungee Shade', cursive;
+}
+
+h1 {color: #99061c;}
+
+div.container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 50px;
+    }
+
+    div.text {
+      width: 60%;
+      float: left;
+      margin: 0 50px;
+    }
+
+
+
+    img {
+      width: 250px;
+      float: left;
+    }
+
+    p {
+      text-align: left;
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    span {
+      font-weight: 700;
+    }
+
+button {
+    background-color: #99061c;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {background-color: #dd485e;
+transform: scale(1.03);
+
+}
+
+div.buttons {text-align: center;
+
+
+}
+
+input {
+      display: block;
+      width: 100%;
+      margin: 20px 0;
+      font-size: 25px;
+    }
+
+    #clear {
+      clear: both;
+    }
+    </style>
+
+</head>
+<body>
+    <h1>Ako som vozil Nórov</h1>
+
+    <h2>Úryvok</h2>
+
+    <div class="container">
+
+    <img src="https://mrtns.eu/tovar/_xl/623/xl623389.jpg?v=16650410851" alt="">
+
+<div class="text">
+    <p>Telefonát, ktorý mi radikálne zmenil zvyšok života k lepšiemu, prišiel paradoxne v deň, ktorý hádam ani nemohol byť horší. 
+    </p>
+    <p>Musel som ísť do práce, hoci som mal mať dva dni voľna a chystal som sa domov. Môjho zamestnávateľa, ctihodný mestský dopravný podnik, v lete 2007 naplno prikvačila personálna kríza. Akútny nedostatok vodičov dospel do fázy, keď už nestačilo iba tlačiť ľudí do dobrovoľnej práce počas voľna. Prešlo sa na systém prikázaných nadčasov a dokonca rušenia dovoleniek. A tak stojím na zastávke Nová doba a zdesene hľadím na prichádzajúcu deväťdesiatosmičku, ktorej vodiča tu mám vystriedať. Namiesto očakávaného kĺbového autobusu predo mnou zastaví krátka Karosa s pohonom na plyn. Výraz vodiča naznačuje, že už preplával búrlivými vodami zúrivosti a frustrácie do pokojnej zátoky mámvpičizmu, toho druhu ľahostajnosti, keď vám stres a nervy vyhodia poistky. 
+    </p>
+    <p>„Prečo máš krátky?“ opýtam sa, keď sa meníme. 
+    </p>
+    <p>„Lebo dlhé už neboli,“ odpovie mi lakonicky. Okrem vodičov chýbajú podniku aj autobusy, čo je dedičstvo rokov zanedbávania obnovy vozového parku. Kvôli tomu sú teraz dve tretiny busov po papierovej životnosti, niektoré aj trikrát. Nedávno som sa do garáže vrátil ťahajúc za pätnásťročnou Karosou odpadnuté prehrdzavené schodíky zo zadných dverí. Som v DPB tri mesiace a, slovami Rutgera Hauera z filmu Blade Runner, videl som veci, ktoré si vy, ľudia, nedokážete ani predstaviť. Z misy toalety v odpočinkovej miestnosti na mňa raz vyskočila krysa, práve keď som tam riešil to, čo sa obvykle rieši v podobných miestnostiach. Jej vyčítavý pohľad, keď ju prúd trafil do hlavy, mám už naveky vrytý do pamäti. 
+    </p>
+    <p>Minulý týždeň som zažil do pol pása vyzlečeného bezdomovca, ktorý si vyvalený na zadnej päťsedačke spokojne z tela olupoval svrab. A dve babky sediace rovno za kabínou a debatujúce, ako cigánsky potkan Dzurinda neznáša Fica, lebo je múdry a spravodlivý a myslí na ľudí. Som touto prácou poznačený na celý život, a to mi ešte ani neskončila skúšobná doba. Bohužiaľ, som príliš poctivý na to, aby som kradol, a príliš škaredý na to, aby som sa nechal vydržiavať. 
+    </p>
+</div>
+
+<div id="clear"></div>
+
+    <div class="buttons">
+
+    <button onclick="clap()">zatlieskaj</button>
+    <a href="https://www.martinus.sk/?uItem=623389" target="_blank">
+        <button>Kúpiť</button>
+        </a>
+    <h2 id="clapCounter">0</h2>
+    <h2 id="clapDescription">tlesknutí</h2>
+
+</div>
+    
+</body>
+
+<script>
+    let numberOfClaps = 0;
+
+function clap() {
+    //1. zvysim hodnotu premennej
+    numberOfClaps = numberOfClaps + 1
+    //2.najdem element podla ID a zmenim jeho text
+    document.getElementById ('clapCounter'). textContent = numberOfClaps
+    //3. ak mam hodnotu numberOfClaps == 1, do elementu vpisem tlesknutie
+    if (numberOfClaps == 1) {
+    document.getElementById ('clapDescription').textContent = 'tlesknutie'
+    }
+
+    if (numberOfClaps == 2) {
+    document.getElementById ('clapDescription').textContent = 'tlesknutia'
+    }
+
+    if (numberOfClaps == 5) {
+    document.getElementById ('clapDescription').textContent = 'tlesknutí'
+    }
+}
+
+
+</script>
+</html>
